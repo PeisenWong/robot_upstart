@@ -34,8 +34,8 @@ After=@(systemd_after)
 [Service]
 Type=simple
 Restart=always
-RestartSec=1
-StartLimitIntervalSec=0
+RestartSec=5
+StartLimitIntervalSec=10
 ExecStart=/usr/sbin/@(name)-start
 
 [Install]
