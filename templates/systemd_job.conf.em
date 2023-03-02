@@ -37,6 +37,7 @@ Restart=always
 RestartSec=5
 StartLimitIntervalSec=10
 ExecStart=/usr/sbin/@(name)-start
+Environment="ROS_MASTER_URI=http://10.61.145.158:11311"  "ROS_HOSTNAME=10.61.145.133" "ROS_IP=10.61.145.133"
 
 [Install]
 WantedBy=multi-user.target
